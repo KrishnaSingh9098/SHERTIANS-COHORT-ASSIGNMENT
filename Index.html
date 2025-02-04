@@ -3,57 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Blog</title>
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical; /* Allow resizing only vertically */
+            height: 100px;  /* Set a default height */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* For smaller screens */
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>My Awesome Blog</h1>
-    <a href="#first">Home</a> | <a href="#second">About</a> | <a href="#third">Contact</a>
-    <hr>
-    <h2 id="first">My First Blog Post</h2>
-    <p> This is the first paragraph of my blog post. I'm excited to share my thoughts and experiences with you all. In this post, I will
-        be talking about my day</p>
-    <p> Let's start with my morning. I woke up early and had a cup of coffee. Then, I decided to go for a walk in the park. It was a
-        beautiful sunny day, and the birds were singing. I saw many people walking their dogs and children playing. It was very
-        refreshing.</p>
-
-        <img src="https://media.istockphoto.com/id/1052500062/photo/stray-dog.webp?a=1&b=1&s=612x612&w=0&k=20&c=m7g1K3rzRp4xFvgf9thwu92CyoO4o0xJqY6YDP6T2B4=" alt="">
-        <p> Here is an image related to my walk in the park (imagine it's a picture of a park!).</p>
-        <b>Things I saw in the park (List Example):</b>
-        <ul>
-            <li> Beautiful flowers</li>
-            <li>Squirrels running around</li>
-            <li>People doing yoga</li>
-            <li>A small pond with ducks</li>
-        </ul>
-        <hr>
-        <h2 id="second"> My Second Blog Post - Favorite Foods</h2>
-        <p> In this post, I want to talk about my favorite foods! I really enjoy trying different cuisines and exploring new flavors.</p>
-        <p> Here are some of my top favorite foods:</p>
-        <ol>
-            <li>Pizza
-                <ul>
-                    <li>Pepperoni</li>
-                    <li>Mushrooms</li>
-                    <li>Onions</li>
-                </ul>
-            </li>
-            <li>Sushi</li>
-            <li>Pasta
-                <ol>
-                    <li>Spaghetti</li>
-                    <li>Penne</li>
-                    <li>Fetuccine</li>
-                </ol>
-            </li>
-        </ol>
-
-        <p>These are just a few of my favorites. What are yours?</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p> That's all for this post! Thanks for reading!</p>
-        <hr>
-       <p id="third"> &copy; 2023 My Simple Blog. All rights reserved.</p>
+    <div class="container">
+        <h2>Contact-Us</h2>
+        <form action="">
+            <label for="name">Name :</label>
+            <input id="name" type="text" placeholder="Enter Your Name" required>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <br>
+            <label for="telephone">Telephone No:</label>
+            <input type="tel" id="telephone" placeholder="Enter Your Telephone No.">
+            <br>
+            <label for="message">Message :</label>
+            <textarea id="message" placeholder="Enter Your Message"></textarea>
+            <br>
+            <button type="submit">Submit Now</button>
+        </form>
+    </div>
 </body>
 </html>
