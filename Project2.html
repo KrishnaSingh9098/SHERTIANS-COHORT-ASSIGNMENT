@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical; /* Allow resizing only vertically */
+            height: 100px;  /* Set a default height */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* For smaller screens */
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact-Us</h2>
+        <form action="">
+            <label for="name">Name :</label>
+            <input id="name" type="text" placeholder="Enter Your Name" required>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <br>
+            <label for="telephone">Telephone No:</label>
+            <input type="tel" id="telephone" placeholder="Enter Your Telephone No.">
+            <br>
+            <label for="message">Message :</label>
+            <textarea id="message" placeholder="Enter Your Message"></textarea>
+            <br>
+            <button type="submit">Submit Now</button>
+        </form>
+    </div>
+</body>
+</html>
