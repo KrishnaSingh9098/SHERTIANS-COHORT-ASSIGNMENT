@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Header */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    padding-top: 20px;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar */
+div {
+    
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+a:hover {
+    color: #007B39;
+}
+
+/* Content */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Blog Post Title */
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Footer */
+#third {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 90%;
+    }
+} */
